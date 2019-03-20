@@ -147,12 +147,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="Internal.h" />
+    <ClInclude Include="OverClockContainer.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Structs.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Internal.cpp" />
     <ClCompile Include="OCDll.cpp" />
+    <ClCompile Include="OverClockContainer.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

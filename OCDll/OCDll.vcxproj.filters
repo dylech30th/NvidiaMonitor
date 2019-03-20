@@ -21,6 +21,18 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OverClockContainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -30,6 +42,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Internal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OverClockContainer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
