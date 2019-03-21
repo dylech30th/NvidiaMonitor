@@ -1,11 +1,12 @@
 #pragma once
 #ifndef _STRUCTS_H
 #define _STRUCTS_H
+#include <string>
 
 typedef unsigned long NvU32;
 typedef char NvAPI_ShortString[64];
 
-typedef struct
+struct NV_GPU_CLOCK_FREQUENCIES_V2
 {
 	NvU32   version;
 	NvU32   ClockType : 2;
@@ -17,7 +18,7 @@ typedef struct
 		NvU32   reserved : 31;
 		NvU32   frequency;
 	}domain[32];
-} NV_GPU_CLOCK_FREQUENCIES_V2;
+};
 
 typedef struct
 {
@@ -80,7 +81,7 @@ typedef struct
 	} pstates[16];
 } NV_GPU_PERF_PSTATES20_INFO_V1;
 
-typedef struct
+struct NV_CHIPSET_INFO_v4
 {
 	NvU32               version;            //!< structure version
 	NvU32               vendorId;           //!< Chipset vendor identification
@@ -96,7 +97,7 @@ typedef struct
 	NvU32               HBsubSysVendorId;   //!< Host bridge subsystem vendor identification
 	NvU32               HBsubSysDeviceId;   //!< Host bridge subsystem device identification
 
-} NV_CHIPSET_INFO_v4;
+};
 
 typedef struct
 {

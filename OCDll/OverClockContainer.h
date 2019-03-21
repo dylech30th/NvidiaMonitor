@@ -1,11 +1,15 @@
 ﻿#pragma once
 
 #include "Structs.h"
+#include "Internal.h"
 
 class OverClockContainer
 {
 public:
-	static NV_GPU_INFO Get_GPU_INFO();
-	static NV_OC_STATES GPUOverClock(int step);
-	static NV_OC_STATES VRAMOverClock(int step);
+	OverClockContainer() = default;
+	~OverClockContainer() = default;
+	NV_GPU_INFO Get_GPU_INFO() const;
+	NV_OC_STATES GPUOverClock(int step) const;
+	NV_OC_STATES VRAMOverClock(int step) const;
+	Internal* internal = new Internal();
 };
